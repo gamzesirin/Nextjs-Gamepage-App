@@ -92,7 +92,7 @@ const Navbar = () => {
 							</ul>
 							{/* Toolbar */}
 							<div className={styles.toolbar}>
-								<Image src="/image/search.svg" alt="Search" width={24} height={24} />
+								<Image src="/image/Search.svg" alt="Search" width={24} height={24} />
 								<input type="text" placeholder="Arama yapınız..." className={styles.searchInput} />
 							</div>
 							{/* CONNECT WALLET Button */}

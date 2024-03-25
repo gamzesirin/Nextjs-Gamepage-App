@@ -20,7 +20,7 @@ const Section = () => {
 					<button>TICKET</button>
 				</div>
 			</div>
-			<Image src="/image/robot.png" alt="Background" width={800} height={600} className={styles.image} />
+			<Image src="/image/Robot.png" alt="Background" width={800} height={600} className={styles.image} />
 		</div>
 	)
 }
