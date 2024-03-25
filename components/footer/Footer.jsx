@@ -10,22 +10,40 @@ const Footer = () => {
 					<div className={styles.f1}>
 						<h2>Marketplace</h2>
 						<ul className={styles.ul}>
-							<li>Explore</li>
-							<li>Job</li>
-							<li>Help Center</li>
+							<li>
+								{' '}
+								<a href="#">Explore</a>{' '}
+							</li>
+							<li>
+								{' '}
+								<a href="#">Job</a>
+							</li>
+							<li>
+								{' '}
+								<a href="#">Help Center</a>
+							</li>
 						</ul>
 					</div>
 					<div className={styles.f1}>
 						<h2>Game Engine</h2>
 						<ul className={styles.ul}>
-							<li>Unreal Engine 5</li>
+							<li>
+								{' '}
+								<a href="#">Unreal Engine 5</a>
+							</li>
 						</ul>
 					</div>
 					<div className={styles.f1}>
 						<h2>Product</h2>
 						<ul className={styles.ul}>
-							<li>About Us</li>
-							<li>Whitepaper</li>
+							<li>
+								{' '}
+								<a href="#"> About Us</a>
+							</li>
+							<li>
+								{' '}
+								<a href="#">Whitepaper</a>
+							</li>
 						</ul>
 					</div>
 					<div className={styles.f1}>
@@ -42,7 +60,9 @@ const Footer = () => {
 			<div className={styles.container}>
 				<div className={styles.footer2}>
 					<div>
-						<h3>Copyright © 2023 Venator Games - Powered by VENATOR GAMES</h3>
+						<h3>
+							Copyright © 2023 Venator Games - Powered by <a href="/">VENATOR GAMES</a>
+						</h3>
 					</div>
 					<div className={styles.ikons}>
 						<div>
@@ -64,7 +84,7 @@ const Footer = () => {
 							<Image src="/image/linkedin.svg" alt="ikon" width={24} height={24} />
 						</div>
 					</div>
-					<div>
+					<div className={styles.ikons}>
 						<Image src="/image/footerikon.svg" alt="ikon" width={54} height={54} />
 					</div>
 				</div>

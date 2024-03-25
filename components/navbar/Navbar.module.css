@@ -14,7 +14,7 @@
 }
 
 .rnHeaderContainer {
-	max-width: 1300px;
+	max-width: 1400px;
 	margin: auto;
 	height: 60px; /* Yüksekliği azaltarak daha ince bir header */
 	display: flex;
@@ -25,6 +25,7 @@
 .rnLogoContainer {
 	display: flex;
 	align-items: center;
+	cursor: pointer;
 }
 
 .rnLogo {
@@ -35,8 +36,6 @@
 .rnMenuContainer {
 	display: flex;
 	align-items: center;
-	padding-left: 20px;
-	gap: 12px; /* Menü öğeleri arasındaki boşluğu azalt */
 }
 
 .rnMenuItems {
@@ -44,7 +43,6 @@
 	align-items: center;
 	list-style: none;
 	padding: 0;
-	gap: 20px; /* Menü öğeleri arasındaki eşit boşluk */
 }
 
 .rnMenuItem {
@@ -63,17 +61,17 @@
 .rnMenuContent {
 	display: flex;
 	align-items: center;
-	gap: 20px; /* İçerikler arası boşluk */
 }
 
 /* Arama kısmı ve butonları içeren toolbar düzenlemesi */
 .toolbar {
 	display: flex;
 	align-items: center;
-	gap: 10px; /* Araçlar arası boşluk */
+	width: 150px;
 	border: 1px solid #ccc;
 	padding-left: 5px;
 	border-radius: 20px; /* Yuvarlak köşeler */
+	color: white;
 }
 
 /* Arama inputu için düzenlemeler */
@@ -84,12 +82,14 @@
 	background-color: transparent;
 	padding: 8px;
 	border-radius: 20px; /* Yuvarlak köşeler */
+	color: white;
 }
 
 /* Butonlar için genel stil düzenlemeleri */
 .button {
 	border: none;
-	padding: 8px 16px;
+	padding: 8px;
+	margin: 5px;
 	border-radius: 20px; /* Yuvarlak köşeler */
 	cursor: pointer;
 	font-weight: 500; /* Yazı kalınlığı */
@@ -112,7 +112,6 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 5px;
 }
 
 /* Dropdown menülerin stil düzenlemesi */
@@ -120,6 +119,7 @@
 	display: none;
 	position: absolute;
 	background-color: #f9f9f9;
+	color: black;
 	min-width: 150px;
 	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 	z-index: 1;
@@ -133,8 +133,7 @@
 
 /* Dropdown menü içindeki bağlantıların stil düzenlemesi */
 .dropdownMenu a {
-	color: black;
-	padding: 12px 16px;
+	padding: 12px;
 	text-decoration: none;
 	display: block;
 }
@@ -142,14 +141,6 @@
 /* Liste stilini kaldır */
 .ul {
 	list-style: none;
-	padding: 2px;
-}
-
-/* Dropdown menüdeki ok ile metin arasındaki boşluğu ayarla */
-.dropdownItem a {
-	display: flex;
-	align-items: center;
-	gap: 1px;
 }
 
 .header {
@@ -158,18 +149,12 @@
 	justify-content: space-between;
 	height: 80px;
 	padding: 0 2rem;
-	background-color: var(--mainColor);
-	color: var(--textColor);
 }
 
 .nav a {
 	margin: 0 1rem;
-	color: var(--textColor);
-	text-decoration: none;
-}
 
-.nav a:hover {
-	color: var(--secondaryColor);
+	text-decoration: none;
 }
 
 .header .nav-btn {
@@ -178,7 +163,6 @@
 	background: transparent;
 	border: none;
 	outline: none;
-	color: var(--textColor);
 	visibility: hidden;
 	opacity: 0;
 	font-size: 1.8rem;
@@ -190,13 +174,22 @@
 	align-items: center;
 }
 
-@media only screen and (max-width: 1024px) {
-	.header .nav-btn {
-		visibility: visible;
-		opacity: 1;
-	}
+.navBtn {
+	display: none; /* Varsayılan olarak gizle */
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	font-size: 24px;
+	color: white;
+	z-index: 101;
+}
 
-	.header .nav {
+@media only screen and (max-width: 1024px) {
+	.navBtn {
+		display: block; /* Mobil cihazlarda göster */
+	}
+	/* Navigasyonu mobil görünüme uygun hale getir */
+	.nav {
 		position: fixed;
 		top: -100vh;
 		left: 0;
@@ -207,21 +200,152 @@
 		align-items: center;
 		justify-content: center;
 		gap: 1.5rem;
-		background-color: var(--mainColor);
-		transition: 1s;
+		background-color: rgba(20, 6, 27, 1);
+		/* Bu değişkeni mevcut renklerinizle değiştirin */
+		transition: all 1s ease-in-out;
 	}
 
-	.header .responsive_nav {
+	/* Navigasyon açıkken görünümü ayarla */
+	.responsive_nav {
 		transform: translateY(100vh);
 	}
 
-	.nav .nav-close-btn {
+	/* Kapatma butonunun konumunu ayarla */
+	.navCloseBtn {
 		position: absolute;
 		top: 2rem;
 		right: 2rem;
 	}
 
+	/* Bağlantıların font boyutunu ayarla */
 	.nav a {
 		font-size: 1.5rem;
+	}
+}
+/* Navbar.module.css içindeki temel stiller */
+
+.rnHeader {
+	color: white;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	transition: all 0.3s ease;
+	z-index: 1000;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.rnHeaderContainer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20px;
+	max-width: 1300px;
+	margin: auto;
+	height: 60px;
+}
+
+.rnLogoContainer {
+	flex-grow: 1;
+}
+/* Önceden tanımlanmış stillerinizi koruyun ve aşağıdaki stil bloklarını ekleyin veya güncelleyin. */
+
+.navBtn {
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	font-size: 24px;
+	color: white;
+
+	display: none; /* Mobil ve masaüstü için her zaman görünür */
+}
+
+/* Masaüstünde dropdown ikon ile yazı arasındaki boşluğu azalt */
+.dropdownItem a {
+	display: flex;
+	align-items: center;
+}
+
+@media only screen and (max-width: 1024px) {
+	.dropdownMenu {
+		position: absolute;
+		color: black;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.3s ease-out;
+		width: 100%;
+	}
+	.rnLogoContainer {
+		margin-bottom: 10px; /* İhtiyacınıza göre bu değeri ayarlayın */
+	}
+
+	.rnMenuContainer {
+		margin-top: 10px; /* İhtiyacınıza göre bu değeri ayarlayın */
+	}
+
+	/* Dropdown menüler için */
+	.dropdownItem {
+		gap: 3px; /* Mobilde ikon ile yazı arasındaki boşluğu azalt */
+	}
+
+	/* Arama inputunu mobilde daha da daraltabilirsiniz */
+	.toolbar .searchInput {
+		width: 180px; /* İhtiyacınıza göre bu değeri ayarlayın */
+	}
+	.nav {
+		display: none; /* Başlangıçta menüyü gizler */
+	}
+
+	.navBtn {
+		cursor: pointer;
+		background: transparent;
+		border: none;
+		font-size: 24px;
+		color: white;
+
+		z-index: 101;
+
+		display: block; /* Mobil ve masaüstü için her zaman görünür */
+	}
+	.rnLogoContainer {
+		display: block;
+		z-index: 101;
+		align-items: center;
+	}
+	.responsive_nav {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		background-color: rgba(20, 6, 27, 1);
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		transform: translateX(0);
+		transition: transform 0.3s ease-in-out;
+		z-index: 100; /* Menünün diğer öğelerin üzerinde görünmesini sağlar */
+	}
+
+	.show {
+		display: block; /* Menü açıkken içeriği göster */
+	}
+
+	.dropdownItem {
+		position: relative; /* Alt menünün konumlandırılması için bir referans noktası */
+	}
+
+	.dropdownItem:hover .dropdownMenu,
+	.dropdownItem:focus-within .dropdownMenu {
+		max-height: 500px; /* Yeterince yüksek bir değer, içeriğin boyutuna bağlı olarak ayarlayın */
+	}
+	.toolbar {
+		width: 200px;
+	}
+	.button {
+		width: 200px;
+	}
+	.nav a {
+		font-size: 1.3rem;
 	}
 }

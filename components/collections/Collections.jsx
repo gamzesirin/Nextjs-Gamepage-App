@@ -9,13 +9,14 @@ const Collections = () => {
 				<h1 className={styles.title}>Top Collection</h1>
 				<div className={styles.cards}>
 					<div className={styles.card}>
-						<Image src="/image/card1.png" width={327} height={468} alt="card" />
+						<Image src="/image/card3.png" width={327} height={468} alt="card" />
 					</div>
+
 					<div className={styles.card}>
 						<Image src="/image/card2.png" width={327} height={468} alt="card" />
 					</div>
 					<div className={styles.card}>
-						<Image src="/image/card3.png" width={327} height={468} alt="card" />
+						<Image src="/image/card1.png" width={327} height={468} alt="card" />
 					</div>
 				</div>
 			</div>
