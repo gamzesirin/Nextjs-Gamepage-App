@@ -24,7 +24,7 @@ const Home = () => {
 					<button>CREATE</button>
 				</div>
 			</div>
-			<Image src="/image/homebg.png" alt="Background" width={1000} height={600} className={styles.image} />
+			<Image src="/image/homebg.svg" alt="Background" width={1000} height={600} className={styles.image} />
 		</div>
 	)
 }

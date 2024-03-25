@@ -12,42 +12,42 @@ const Cards = () => {
 			<div className={styles.cards0}>
 				<div className={styles.cards1}>
 					<div>
-						<Image src="/image/Rectangle7.png" width={168} height={168} alt="card" />
+						<Image src="/image/Rectangle7.svg" width={168} height={168} alt="card" />
 					</div>
 					<div>
-						<Image src="/image/Rectangle10.png" width={168} height={168} alt="card" />
+						<Image src="/image/Rectangle10.svg" width={168} height={168} alt="card" />
 					</div>
 					<div>
-						<Image src="/image/Rectangle9.png" width={168} height={168} alt="card" />
+						<Image src="/image/Rectangle9.svg" width={168} height={168} alt="card" />
 					</div>
 					<div>
-						<Image src="/image/Rectangle8.png" width={168} height={168} alt="card" />
+						<Image src="/image/Rectangle8.svg" width={168} height={168} alt="card" />
 					</div>
 					<div>
-						<Image src="/image/Rectangle11.png" width={168} height={168} alt="card" />
+						<Image src="/image/Rectangle11.svg" width={168} height={168} alt="card" />
 					</div>
 					<div>
-						<Image src="/image/Rectangle14.png" width={168} height={168} alt="card" />
+						<Image src="/image/Rectangle14.svg" width={168} height={168} alt="card" />
 					</div>
 					<div>
-						<Image src="/image/Rectangle13.png" width={168} height={168} alt="card" />
+						<Image src="/image/Rectangle13.svg" width={168} height={168} alt="card" />
 					</div>
 				</div>
 				<div className={styles.cards2}>
 					<div>
-						<Image src="/image/Rectangle15.png" width={168} height={168} alt="card" />
+						<Image src="/image/Rectangle15.svg" width={168} height={168} alt="card" />
 					</div>
 					<div>
-						<Image src="/image/Rectangle5.png" width={168} height={168} alt="card" />
+						<Image src="/image/Rectangle5.svg" width={168} height={168} alt="card" />
 					</div>
 					<div>
-						<Image src="/image/Rectangle4.png" width={168} height={168} alt="card" />
+						<Image src="/image/Rectangle4.svg" width={168} height={168} alt="card" />
 					</div>
 					<div>
-						<Image src="/image/Rectangle6.png" width={168} height={168} alt="card" />
+						<Image src="/image/Rectangle6.svg" width={168} height={168} alt="card" />
 					</div>
 					<div>
-						<Image src="/image/Rectangle12.png" width={168} height={168} alt="card" />
+						<Image src="/image/Rectangle12.svg" width={168} height={168} alt="card" />
 					</div>
 					<button className={styles.button}>EXPLORE MORE</button>
 				</div>
