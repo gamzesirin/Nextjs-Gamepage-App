@@ -1,0 +1,121 @@
+.home {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	height: 80vh;
+	padding: 0 20px;
+}
+
+.main {
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: start;
+	gap: 25px;
+}
+.butons {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+.titleh2 {
+	background: -webkit-linear-gradient(to right, rgba(173, 19, 245, 1), rgba(0, 194, 255, 0.79));
+	background: linear-gradient(to right, rgba(173, 19, 245, 1), rgba(0, 194, 255, 0.79));
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	display: inline-block; /* veya başka bir değer, duruma göre */
+	font-weight: bold;
+	font-size: 30px;
+}
+.paragraf {
+	color: rgba(175, 184, 188, 0.52);
+}
+
+.butons button {
+	border-radius: 20px; /* Yuvarlak köşeler */
+	padding: 8px 10px; /* Üst-alt ve sağ-sol boşluk */
+	width: 120px; /* Genişlik */
+	color: white; /* Yazı rengi */
+	background: linear-gradient(to right, rgba(173, 19, 245, 1), rgba(0, 194, 255, 0.79)); /* Arka plan gradyanı */
+	cursor: pointer; /* İmleç, üzerine gelindiğinde el şeklinde olur */
+	font-size: 15px; /* Yazı boyutu */
+	margin: 0 5px; /* Butonlar arası boşluk */
+	font-weight: bold;
+}
+
+.butons button:nth-child(1) {
+	border: 2px solid transparent; /* Beyaz çerçeve */
+	background: linear-gradient(to right, rgba(173, 19, 245, 1), rgba(0, 194, 255, 0.79)); /* İlk butonun arka planı */
+}
+
+.butons button:nth-child(2) {
+	border: 2px solid white; /* Beyaz çerçeve */
+	background: transparent; /* İkinci butonun varsayılan arka planı */
+}
+
+.butons button:nth-child(2):hover {
+	background: none; /* İkinci butonun üzerine gelindiğinde arka plan */
+}
+
+.discordbtn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 3px 15px;
+	gap: 10px;
+	border: 2px solid transparent;
+	border-radius: 20px;
+	background-image: linear-gradient(to right, rgba(204, 63, 165, 1), rgba(173, 19, 245, 1));
+	color: white;
+	font-size: 14px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+.roadbtn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 3px 25px;
+	gap: 5px;
+	border: 2px solid transparent;
+	border-radius: 20px;
+	background-image: linear-gradient(to right, rgba(212, 118, 47, 1), rgba(40, 201, 230, 1));
+
+	color: white;
+	font-size: 20px;
+	letter-spacing: 4px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+	.home {
+		flex-direction: column;
+		height: auto;
+		margin-top: 100px;
+	}
+	.main {
+		padding: 20px;
+	}
+	.butons {
+		flex-direction: row;
+	}
+	.butons button {
+		width: 100%;
+	}
+	.discordbtn {
+		padding: 3px 10px;
+	}
+	.roadbtn {
+		padding: 3px 15px;
+	}
+	.image {
+		height: auto;
+		width: 100%;
+	}
+}

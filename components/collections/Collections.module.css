@@ -1,0 +1,35 @@
+.container {
+	display: flex;
+	justify-content: center;
+}
+
+.title {
+	background: -webkit-linear-gradient(to right, rgba(235, 106, 21, 1), rgba(78, 203, 113, 1));
+	background: linear-gradient(to right, rgba(235, 106, 21, 1), rgba(78, 203, 113, 1));
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	display: inline-block;
+	font-weight: 600;
+	font-size: 40px;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.cards {
+	display: flex;
+	flex-direction: row;
+	gap: 120px;
+	max-width: 1300px;
+}
+
+@media screen and (max-width: 768px) {
+	.cards {
+		flex-direction: column;
+		gap: 80px;
+	}
+}

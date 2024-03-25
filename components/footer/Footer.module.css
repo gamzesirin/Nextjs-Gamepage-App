@@ -1,0 +1,86 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center; /* Yatayda ortalamak için */
+	padding: 30px;
+	margin-top: 20px;
+	border-top: 1px solid rgba(255, 255, 255, 0.37);
+}
+
+.footer {
+	display: flex;
+	flex-direction: row;
+	gap: 180px;
+	align-items: start;
+}
+
+.f1 {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.f1 p {
+	color: rgba(255, 255, 255, 0.52);
+	padding-bottom: 5px;
+}
+
+.ul li {
+	list-style: none;
+	color: rgba(255, 255, 255, 0.52);
+}
+
+.toolbar {
+	display: flex;
+	align-items: center;
+	gap: 15px; /* Araçlar arası boşluk */
+	border: 1px solid #ccc;
+	border-radius: 20px; /* Yuvarlak köşeler */
+	background-color: rgba(248, 248, 248, 0.3);
+}
+
+/* Arama inputu için düzenlemeler */
+.searchInput {
+	font-size: 16px; /* Yazı boyutu */
+	border: none;
+	outline: none;
+	color: white;
+	background-color: transparent;
+	padding: 15px;
+	border-radius: 20px; /* Yuvarlak köşeler */
+}
+.footer2 {
+	display: flex;
+
+	flex-direction: row;
+	padding: 50px;
+	gap: 120px;
+	align-items: center;
+	color: rgba(255, 255, 255, 0.52);
+}
+.ikons {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+	.footer {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 20px;
+	}
+	.footer2 {
+		flex-direction: column;
+		gap: 30px;
+	}
+	.f1 {
+		align-items: start;
+	}
+	.ikons {
+		justify-content: center;
+	}
+	.fot {
+		margin-right: 10px;
+	}
+}

@@ -1,0 +1,227 @@
+/* Navbar.module.css */
+.menuCursor {
+	cursor: pointer;
+}
+
+.rnHeader {
+	color: white;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	transition: all 0.3s ease;
+	z-index: 1000;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hafif bir gölge efekti */
+}
+
+.rnHeaderContainer {
+	max-width: 1300px;
+	margin: auto;
+	height: 60px; /* Yüksekliği azaltarak daha ince bir header */
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.rnLogoContainer {
+	display: flex;
+	align-items: center;
+}
+
+.rnLogo {
+	width: 48px; /* Logo boyutunu küçült */
+	height: 48px; /* Orantılı olacak şekilde yüksekliği de ayarla */
+}
+
+.rnMenuContainer {
+	display: flex;
+	align-items: center;
+	padding-left: 20px;
+	gap: 12px; /* Menü öğeleri arasındaki boşluğu azalt */
+}
+
+.rnMenuItems {
+	display: flex;
+	align-items: center;
+	list-style: none;
+	padding: 0;
+	gap: 20px; /* Menü öğeleri arasındaki eşit boşluk */
+}
+
+.rnMenuItem {
+	text-decoration: none;
+	color: #333; /* Daha koyu bir yazı rengi */
+	font-weight: 500; /* Yazı tipini biraz kalınlaştır */
+}
+
+.rnBottomMenuItem,
+.rnBottomMenu1Container,
+.rnBottomMenu1Children,
+.rnBottomMenu1Child {
+	display: none; /* Alt menüler için şu anlık görünmez yap */
+}
+
+.rnMenuContent {
+	display: flex;
+	align-items: center;
+	gap: 20px; /* İçerikler arası boşluk */
+}
+
+/* Arama kısmı ve butonları içeren toolbar düzenlemesi */
+.toolbar {
+	display: flex;
+	align-items: center;
+	gap: 10px; /* Araçlar arası boşluk */
+	border: 1px solid #ccc;
+	padding-left: 5px;
+	border-radius: 20px; /* Yuvarlak köşeler */
+}
+
+/* Arama inputu için düzenlemeler */
+.searchInput {
+	font-size: 14px; /* Yazı boyutu */
+	border: none;
+	outline: none;
+	background-color: transparent;
+	padding: 8px;
+	border-radius: 20px; /* Yuvarlak köşeler */
+}
+
+/* Butonlar için genel stil düzenlemeleri */
+.button {
+	border: none;
+	padding: 8px 16px;
+	border-radius: 20px; /* Yuvarlak köşeler */
+	cursor: pointer;
+	font-weight: 500; /* Yazı kalınlığı */
+	color: white; /* Yazı rengi */
+	font-size: 14px; /* Yazı boyutu */
+}
+
+/* Buton 1 özgü stil */
+.button1 {
+	background-image: linear-gradient(to right, rgba(132, 53, 238, 1), rgba(35, 131, 216, 1));
+}
+
+/* Buton 2 özgü stil */
+.button2 {
+	background-image: linear-gradient(to right, rgba(99, 243, 110, 1), rgba(173, 19, 245, 1));
+}
+
+/* Dropdown menü için ok işareti stil düzenlemesi */
+.dropdownItem {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+}
+
+/* Dropdown menülerin stil düzenlemesi */
+.dropdownMenu {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 150px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+	top: 40px; /* Dropdown menünün ana menüden aşağıda olmasını sağlar */
+}
+
+/* Dropdown menü öğesine fare üzeri gelindiğinde alt menüyü göster */
+.dropdownItem:hover .dropdownMenu {
+	display: block;
+}
+
+/* Dropdown menü içindeki bağlantıların stil düzenlemesi */
+.dropdownMenu a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+/* Liste stilini kaldır */
+.ul {
+	list-style: none;
+	padding: 2px;
+}
+
+/* Dropdown menüdeki ok ile metin arasındaki boşluğu ayarla */
+.dropdownItem a {
+	display: flex;
+	align-items: center;
+	gap: 1px;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 80px;
+	padding: 0 2rem;
+	background-color: var(--mainColor);
+	color: var(--textColor);
+}
+
+.nav a {
+	margin: 0 1rem;
+	color: var(--textColor);
+	text-decoration: none;
+}
+
+.nav a:hover {
+	color: var(--secondaryColor);
+}
+
+.header .nav-btn {
+	padding: 5px;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: var(--textColor);
+	visibility: hidden;
+	opacity: 0;
+	font-size: 1.8rem;
+}
+
+.header div,
+.nav {
+	display: flex;
+	align-items: center;
+}
+
+@media only screen and (max-width: 1024px) {
+	.header .nav-btn {
+		visibility: visible;
+		opacity: 1;
+	}
+
+	.header .nav {
+		position: fixed;
+		top: -100vh;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 1.5rem;
+		background-color: var(--mainColor);
+		transition: 1s;
+	}
+
+	.header .responsive_nav {
+		transform: translateY(100vh);
+	}
+
+	.nav .nav-close-btn {
+		position: absolute;
+		top: 2rem;
+		right: 2rem;
+	}
+
+	.nav a {
+		font-size: 1.5rem;
+	}
+}
