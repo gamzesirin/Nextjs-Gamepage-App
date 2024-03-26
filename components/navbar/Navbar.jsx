@@ -4,6 +4,7 @@ import { FaBars, FaTimes } from 'react-icons/fa'
 import React, { useRef, useState } from 'react'
 
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from './Navbar.module.css'
 
 const Navbar = () => {
@@ -46,9 +47,7 @@ const Navbar = () => {
 						</div>
 						{/* ABOUT */}
 						<ul className={styles.ul}>
-							<li>
-								<a href="/about">ABOUT</a>
-							</li>
+							<Link href="/about">ABOUT</Link>
 						</ul>
 						{/* GAMES Dropdown */}
 						<div
