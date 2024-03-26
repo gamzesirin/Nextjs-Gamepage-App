@@ -23,7 +23,7 @@
 .cards {
 	display: flex;
 	flex-direction: row;
-	gap: 120px;
+	gap: 100px;
 	max-width: 1300px;
 }
 
@@ -31,5 +31,8 @@
 	.cards {
 		flex-direction: column;
 		gap: 50px;
+	}
+	.title {
+		font-size: 30px;
 	}
 }

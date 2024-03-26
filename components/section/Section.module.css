@@ -57,6 +57,9 @@
 	.main {
 		padding: 20px;
 	}
+	.main h1 {
+		font-size: 30px;
+	}
 	.butons {
 		flex-direction: column;
 	}

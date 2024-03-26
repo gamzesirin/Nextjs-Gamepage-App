@@ -53,6 +53,9 @@
 		align-items: center;
 		justify-content: center;
 	}
+	.titles h2 {
+		font-size: 30px;
+	}
 	.cards {
 		flex-direction: column;
 		height: auto;
