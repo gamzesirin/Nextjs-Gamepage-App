@@ -41,7 +41,6 @@
 	display: flex;
 	align-items: center;
 
-	border: 1px solid #ccc;
 	border-radius: 10px; /* Yuvarlak köşeler */
 	background-color: rgba(248, 248, 248, 0.3);
 }
@@ -77,7 +76,11 @@
 	margin-right: 10px;
 	cursor: pointer;
 }
-
+.btn {
+	background-color: transparent;
+	border-radius: 5px;
+	cursor: pointer;
+}
 @media screen and (max-width: 768px) {
 	.container {
 		padding: 10px;
@@ -109,6 +112,11 @@
 	}
 	.fot {
 		margin-right: 10px;
+		cursor: pointer;
+	}
+	.btn {
+		background-color: transparent;
+		border-radius: 5px;
 		cursor: pointer;
 	}
 }

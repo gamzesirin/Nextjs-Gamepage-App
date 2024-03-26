@@ -107,9 +107,9 @@ const Footer = () => {
 							</li>
 						</ul>
 					</div>
-					<div className={styles.ikons}>
+					<button className={styles.btn}>
 						<Image src="/image/footerikon.svg" alt="ikon" width={44} height={44} className={styles.ikons} />
-					</div>
+					</button>
 				</div>
 			</div>
 		</div>
