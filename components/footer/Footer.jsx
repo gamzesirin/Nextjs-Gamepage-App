@@ -64,28 +64,48 @@ const Footer = () => {
 							Copyright © 2023 Venator Games - Powered by <a href="/">VENATOR GAMES</a>
 						</h3>
 					</div>
-					<div className={styles.ikons}>
-						<div>
-							<Image src="/image/twitter.svg" alt="ikon" width={24} height={24} />
-						</div>
-						<div>
-							<Image src="/image/telegram.svg" alt="ikon" width={24} height={24} />
-						</div>
-						<div>
-							<Image src="/image/youtube.svg" alt="ikon" width={24} height={24} />
-						</div>
-						<div>
-							<Image src="/image/instagram.svg" alt="ikon" width={24} height={24} />
-						</div>
-						<div>
-							<Image src="/image/discord.svg" alt="ikon" width={24} height={24} />
-						</div>
-						<div>
-							<Image src="/image/linkedin.svg" alt="ikon" width={24} height={24} />
-						</div>
+					<div>
+						<ul className={styles.ikons}>
+							<li>
+								<a href="#">
+									{' '}
+									<Image src="/image/twitter.svg" alt="ikon" width={24} height={24} />
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									{' '}
+									<Image src="/image/telegram.svg" alt="ikon" width={24} height={24} />
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									{' '}
+									<Image src="/image/youtube.svg" alt="ikon" width={24} height={24} />
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									{' '}
+									<Image src="/image/instagram.svg" alt="ikon" width={24} height={24} />
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									{' '}
+									<Image src="/image/discord.svg" alt="ikon" width={24} height={24} />
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									{' '}
+									<Image src="/image/linkedin.svg" alt="ikon" width={24} height={24} />
+								</a>
+							</li>
+						</ul>
 					</div>
 					<div className={styles.ikons}>
-						<Image src="/image/footerikon.svg" alt="ikon" width={54} height={54} />
+						<Image src="/image/footerikon.svg" alt="ikon" width={44} height={44} className={styles.ikons} />
 					</div>
 				</div>
 			</div>

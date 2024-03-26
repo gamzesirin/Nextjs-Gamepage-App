@@ -10,7 +10,7 @@
 	background-clip: text;
 	color: transparent;
 	display: inline-block;
-	font-weight: 600;
+	font-weight: 800;
 	font-size: 40px;
 }
 
@@ -30,6 +30,6 @@
 @media screen and (max-width: 768px) {
 	.cards {
 		flex-direction: column;
-		gap: 80px;
+		gap: 50px;
 	}
 }

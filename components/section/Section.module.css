@@ -11,8 +11,8 @@
 	padding: 50px;
 	display: flex;
 	flex-direction: column;
-	align-items: start;
-	justify-content: start;
+	align-items: flex-start;
+	justify-content: flex-start;
 	gap: 25px;
 }
 .butons {
@@ -45,8 +45,8 @@
 	background: black;
 	cursor: pointer; /* İmleç, üzerine gelindiğinde el şeklinde olur */
 	font-size: 15px; /* Yazı boyutu */
+	font-weight: 600;
 	margin: 0 5px; /* Butonlar arası boşluk */
-	font-weight: bold;
 }
 
 @media screen and (max-width: 768px) {
