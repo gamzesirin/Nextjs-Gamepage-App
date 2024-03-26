@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { IoMdArrowRoundUp } from 'react-icons/io'
 import React from 'react'
 import styles from './Footer.module.css'
 
@@ -108,7 +109,9 @@ const Footer = () => {
 						</ul>
 					</div>
 					<button className={styles.btn}>
-						<Image src="/image/footerikon.svg" alt="ikon" width={44} height={44} className={styles.ikons} />
+						<a href="/">
+							<IoMdArrowRoundUp />
+						</a>
 					</button>
 				</div>
 			</div>
