@@ -1,13 +1,10 @@
 import Collections from '@/components/collections/Collections'
-import React from 'react'
 
-const page = () => {
+export default function Page() {
 	return (
-		<div>
-			{' '}
+		<>
+			<h1>Hello, Dashboard Page!</h1>
 			<Collections />
-		</div>
+		</>
 	)
 }
-
-export default page
