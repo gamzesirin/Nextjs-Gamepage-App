@@ -61,7 +61,10 @@ const Footer = () => {
 				<div className={styles.footer2}>
 					<div>
 						<h3>
-							Copyright © 2023 Venator Games - Powered by <a href="/">VENATOR GAMES</a>
+							Copyright © 2023 Venator Games - Powered by{' '}
+							<u>
+								<a href="/">VENATOR GAMES</a>
+							</u>
 						</h3>
 					</div>
 					<div>
