@@ -2,7 +2,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center; /* Yatayda ortalamak için */
+	justify-content: center;
 	padding: 30px;
 	margin-top: 20px;
 	border-top: 1px solid rgba(255, 255, 255, 0.37);
@@ -41,19 +41,18 @@
 	display: flex;
 	align-items: center;
 
-	border-radius: 10px; /* Yuvarlak köşeler */
+	border-radius: 10px;
 	background-color: rgba(248, 248, 248, 0.3);
 }
 
-/* Arama inputu için düzenlemeler */
 .searchInput {
-	font-size: 16px; /* Yazı boyutu */
+	font-size: 16px;
 	border: none;
 	outline: none;
 	color: white;
 	background-color: transparent;
 	padding: 10px;
-	border-radius: 5px; /* Yuvarlak köşeler */
+	border-radius: 5px;
 }
 .footer2 {
 	display: flex;

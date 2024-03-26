@@ -29,7 +29,7 @@
 	-webkit-background-clip: text;
 	background-clip: text;
 	color: transparent;
-	display: inline-block; /* veya başka bir değer, duruma göre */
+	display: inline-block;
 	font-weight: bold;
 	font-size: 30px;
 }
@@ -38,29 +38,29 @@
 }
 
 .butons button {
-	border-radius: 20px; /* Yuvarlak köşeler */
-	padding: 8px 10px; /* Üst-alt ve sağ-sol boşluk */
-	width: 120px; /* Genişlik */
-	color: white; /* Yazı rengi */
-	background: linear-gradient(to right, rgba(173, 19, 245, 1), rgba(0, 194, 255, 0.79)); /* Arka plan gradyanı */
-	cursor: pointer; /* İmleç, üzerine gelindiğinde el şeklinde olur */
-	font-size: 15px; /* Yazı boyutu */
-	margin: 0 5px; /* Butonlar arası boşluk */
+	border-radius: 20px;
+	padding: 8px 10px;
+	width: 120px;
+	color: white;
+	background: linear-gradient(to right, rgba(173, 19, 245, 1), rgba(0, 194, 255, 0.79));
+	cursor: pointer;
+	font-size: 15px;
+	margin: 0 5px;
 	font-weight: bold;
 }
 
 .butons button:nth-child(1) {
-	border: 2px solid transparent; /* Beyaz çerçeve */
-	background: linear-gradient(to right, rgba(173, 19, 245, 1), rgba(0, 194, 255, 0.79)); /* İlk butonun arka planı */
+	border: 2px solid transparent;
+	background: linear-gradient(to right, rgba(173, 19, 245, 1), rgba(0, 194, 255, 0.79));
 }
 
 .butons button:nth-child(2) {
-	border: 2px solid white; /* Beyaz çerçeve */
-	background: transparent; /* İkinci butonun varsayılan arka planı */
+	border: 2px solid white;
+	background: transparent;
 }
 
 .butons button:nth-child(2):hover {
-	background: none; /* İkinci butonun üzerine gelindiğinde arka plan */
+	background: none;
 }
 
 .discordbtn {

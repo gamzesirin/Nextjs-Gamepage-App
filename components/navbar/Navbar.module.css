@@ -1,4 +1,3 @@
-/* Navbar.module.css */
 .menuCursor {
 	cursor: pointer;
 }
@@ -6,17 +5,17 @@
 .rnHeader {
 	color: white;
 	width: 100%;
-	/* position: fixed; */
+
 	top: 0;
 	transition: all 0.3s ease;
 	z-index: 1000;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hafif bir gölge efekti */
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .rnHeaderContainer {
 	max-width: 1400px;
 	margin: auto;
-	height: 60px; /* Yüksekliği azaltarak daha ince bir header */
+	height: 60px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -29,8 +28,8 @@
 }
 
 .rnLogo {
-	width: 48px; /* Logo boyutunu küçült */
-	height: 48px; /* Orantılı olacak şekilde yüksekliği de ayarla */
+	width: 48px;
+	height: 48px;
 }
 
 .rnMenuContainer {
@@ -47,15 +46,15 @@
 
 .rnMenuItem {
 	text-decoration: none;
-	color: #333; /* Daha koyu bir yazı rengi */
-	font-weight: 500; /* Yazı tipini biraz kalınlaştır */
+	color: #333;
+	font-weight: 500;
 }
 
 .rnBottomMenuItem,
 .rnBottomMenu1Container,
 .rnBottomMenu1Children,
 .rnBottomMenu1Child {
-	display: none; /* Alt menüler için şu anlık görünmez yap */
+	display: none;
 }
 
 .rnMenuContent {
@@ -63,58 +62,51 @@
 	align-items: center;
 }
 
-/* Arama kısmı ve butonları içeren toolbar düzenlemesi */
 .toolbar {
 	display: flex;
 	align-items: center;
 	width: 150px;
 	border: 1px solid #ccc;
 	padding-left: 5px;
-	border-radius: 20px; /* Yuvarlak köşeler */
+	border-radius: 20px;
 	color: white;
 }
 
-/* Arama inputu için düzenlemeler */
 .searchInput {
-	font-size: 14px; /* Yazı boyutu */
+	font-size: 14px;
 	border: none;
 	outline: none;
 	background-color: transparent;
 	padding: 7px;
-	border-radius: 20px; /* Yuvarlak köşeler */
+	border-radius: 20px;
 	color: white;
 }
 
-/* Butonlar için genel stil düzenlemeleri */
 .button {
 	border: none;
 	padding: 8px;
 	margin: 3px;
-	border-radius: 20px; /* Yuvarlak köşeler */
+	border-radius: 20px;
 	cursor: pointer;
-	font-weight: 600; /* Yazı kalınlığı */
-	color: white; /* Yazı rengi */
-	font-size: 14px; /* Yazı boyutu */
+	font-weight: 600;
+	color: white;
+	font-size: 14px;
 }
 
-/* Buton 1 özgü stil */
 .button1 {
 	background-image: linear-gradient(to right, rgba(132, 53, 238, 1), rgba(35, 131, 216, 1));
 }
 
-/* Buton 2 özgü stil */
 .button2 {
 	background-image: linear-gradient(to right, rgba(99, 243, 110, 1), rgba(173, 19, 245, 1));
 }
 
-/* Dropdown menü için ok işareti stil düzenlemesi */
 .dropdownItem {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-/* Dropdown menülerin stil düzenlemesi */
 .dropdownMenu {
 	display: none;
 	position: absolute;
@@ -123,22 +115,19 @@
 	min-width: 150px;
 	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 	z-index: 1;
-	top: 40px; /* Dropdown menünün ana menüden aşağıda olmasını sağlar */
+	top: 40px;
 }
 
-/* Dropdown menü öğesine fare üzeri gelindiğinde alt menüyü göster */
 .dropdownItem:hover .dropdownMenu {
 	display: block;
 }
 
-/* Dropdown menü içindeki bağlantıların stil düzenlemesi */
 .dropdownMenu a {
 	padding: 12px;
 	text-decoration: none;
 	display: block;
 }
 
-/* Liste stilini kaldır */
 .ul {
 	list-style: none;
 }
@@ -175,7 +164,7 @@
 }
 
 .navBtn {
-	display: none; /* Varsayılan olarak gizle */
+	display: none;
 	cursor: pointer;
 	background: transparent;
 	border: none;
@@ -186,9 +175,8 @@
 
 @media only screen and (max-width: 1024px) {
 	.navBtn {
-		display: block; /* Mobil cihazlarda göster */
+		display: block;
 	}
-	/* Navigasyonu mobil görünüme uygun hale getir */
 	.nav {
 		position: fixed;
 		top: -100vh;
@@ -201,33 +189,29 @@
 		justify-content: center;
 		gap: 1.5rem;
 		background-color: rgba(20, 6, 27, 1);
-		/* Bu değişkeni mevcut renklerinizle değiştirin */
+
 		transition: all 1s ease-in-out;
 	}
 
-	/* Navigasyon açıkken görünümü ayarla */
 	.responsive_nav {
 		transform: translateY(100vh);
 	}
 
-	/* Kapatma butonunun konumunu ayarla */
 	.navCloseBtn {
 		position: absolute;
 		top: 2rem;
 		right: 2rem;
 	}
 
-	/* Bağlantıların font boyutunu ayarla */
 	.nav a {
 		font-size: 1.5rem;
 	}
 }
-/* Navbar.module.css içindeki temel stiller */
 
 .rnHeader {
 	color: white;
 	width: 100%;
-	/* position: fixed; */
+
 	top: 0;
 	transition: all 0.3s ease;
 	z-index: 1000;
@@ -247,7 +231,6 @@
 .rnLogoContainer {
 	flex-grow: 1;
 }
-/* Önceden tanımlanmış stillerinizi koruyun ve aşağıdaki stil bloklarını ekleyin veya güncelleyin. */
 
 .navBtn {
 	cursor: pointer;
@@ -256,10 +239,9 @@
 	font-size: 24px;
 	color: white;
 
-	display: none; /* Mobil ve masaüstü için her zaman görünür */
+	display: none;
 }
 
-/* Masaüstünde dropdown ikon ile yazı arasındaki boşluğu azalt */
 .dropdownItem a {
 	display: flex;
 	align-items: center;
@@ -285,24 +267,22 @@
 		width: 100%;
 	}
 	.rnLogoContainer {
-		margin-bottom: 10px; /* İhtiyacınıza göre bu değeri ayarlayın */
+		margin-bottom: 10px;
 	}
 
 	.rnMenuContainer {
-		margin-top: 10px; /* İhtiyacınıza göre bu değeri ayarlayın */
+		margin-top: 10px;
 	}
 
-	/* Dropdown menüler için */
 	.dropdownItem {
-		gap: 3px; /* Mobilde ikon ile yazı arasındaki boşluğu azalt */
+		gap: 3px;
 	}
 
-	/* Arama inputunu mobilde daha da daraltabilirsiniz */
 	.toolbar .searchInput {
-		width: 180px; /* İhtiyacınıza göre bu değeri ayarlayın */
+		width: 180px;
 	}
 	.nav {
-		display: none; /* Başlangıçta menüyü gizler */
+		display: none;
 	}
 
 	.navBtn {
@@ -314,7 +294,7 @@
 
 		z-index: 101;
 
-		display: block; /* Mobil ve masaüstü için her zaman görünür */
+		display: block;
 	}
 	.rnLogoContainer {
 		display: block;
@@ -334,20 +314,20 @@
 
 		transform: translateX(0);
 		transition: transform 0.3s ease-in-out;
-		z-index: 100; /* Menünün diğer öğelerin üzerinde görünmesini sağlar */
+		z-index: 100;
 	}
 
 	.show {
-		display: block; /* Menü açıkken içeriği göster */
+		display: block;
 	}
 
 	.dropdownItem {
-		position: relative; /* Alt menünün konumlandırılması için bir referans noktası */
+		position: relative;
 	}
 
 	.dropdownItem:hover .dropdownMenu,
 	.dropdownItem:focus-within .dropdownMenu {
-		max-height: 500px; /* Yeterince yüksek bir değer, içeriğin boyutuna bağlı olarak ayarlayın */
+		max-height: 500px;
 	}
 	.toolbar {
 		width: 200px;
