@@ -22,33 +22,33 @@
 	justify-content: center;
 	gap: 10px;
 }
-.titleh2 {
-	background: -webkit-linear-gradient(to right, rgba(173, 19, 245, 1), rgba(0, 194, 255, 0.79));
-	background: linear-gradient(to right, rgba(153, 53, 162, 1), rgba(235, 105, 20, 1));
-	-webkit-background-clip: text;
-	background-clip: text;
-	color: transparent;
-	display: inline-block; /* veya başka bir değer, duruma göre */
-	font-weight: 900;
-	font-size: 40px;
-}
+
 .paragraf {
 	color: rgba(175, 184, 188, 0.52);
 }
 
 .butons button {
-	border-radius: 20px; /* Yuvarlak köşeler */
+	border-radius: 20px;
 	border: 1px solid white;
-	padding: 8px 10px; /* Üst-alt ve sağ-sol boşluk */
-	width: 120px; /* Genişlik */
-	color: white; /* Yazı rengi */
+	padding: 8px 10px;
+	width: 120px;
+	color: white;
 	background: black;
-	cursor: pointer; /* İmleç, üzerine gelindiğinde el şeklinde olur */
-	font-size: 15px; /* Yazı boyutu */
+	cursor: pointer;
+	font-size: 15px;
 	font-weight: 600;
-	margin: 0 5px; /* Butonlar arası boşluk */
+	margin: 0 5px;
 }
-
+.btn {
+	border: none;
+	padding: 10px 100px;
+	border-radius: 20px;
+	cursor: pointer;
+	font-weight: 600;
+	color: white;
+	font-size: 15px;
+	background-image: linear-gradient(to right, rgba(161, 61, 172, 1), rgba(235, 106, 21, 1));
+}
 @media screen and (max-width: 768px) {
 	.home {
 		flex-direction: column;
@@ -66,9 +66,7 @@
 	.butons button {
 		width: 100%;
 	}
-	.titleh2 {
-		font-size: 30px;
-	}
+
 	.image {
 		height: auto;
 		width: 100%;

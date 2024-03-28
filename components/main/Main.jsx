@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 import styles from './Main.module.css'
 
@@ -8,7 +9,7 @@ const Home = () => {
 			<div className={styles.main}>
 				<button className={styles.discordbtn}>
 					<Image src="/image/discord.svg" alt="Discord" width={25} height={25} />
-					JOIN US DISCORD
+					<Link href="https://discord.gg/AHmZmtNy">JOIN US DISCORD</Link>
 				</button>
 				<button className={styles.roadbtn}>ROAD MAP</button>
 				<h1>

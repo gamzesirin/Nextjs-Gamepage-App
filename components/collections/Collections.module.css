@@ -23,7 +23,7 @@
 .cards {
 	display: flex;
 	flex-direction: row;
-	gap: 120px;
+	gap: 150px;
 	max-width: 1300px;
 }
 

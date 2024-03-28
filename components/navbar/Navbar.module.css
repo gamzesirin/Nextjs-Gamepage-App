@@ -5,7 +5,6 @@
 .rnHeader {
 	color: white;
 	width: 100%;
-
 	top: 0;
 	transition: all 0.3s ease;
 	z-index: 1000;
@@ -62,26 +61,6 @@
 	align-items: center;
 }
 
-.toolbar {
-	display: flex;
-	align-items: center;
-	width: 150px;
-	border: 1px solid #ccc;
-	padding-left: 5px;
-	border-radius: 20px;
-	color: white;
-}
-
-.searchInput {
-	font-size: 14px;
-	border: none;
-	outline: none;
-	background-color: transparent;
-	padding: 7px;
-	border-radius: 20px;
-	color: white;
-}
-
 .button {
 	border: none;
 	padding: 8px;
@@ -101,33 +80,6 @@
 	background-image: linear-gradient(to right, rgba(99, 243, 110, 1), rgba(173, 19, 245, 1));
 }
 
-.dropdownItem {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.dropdownMenu {
-	display: none;
-	position: absolute;
-	background-color: #f9f9f9;
-	color: black;
-	min-width: 150px;
-	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-	z-index: 1;
-	top: 40px;
-}
-
-.dropdownItem:hover .dropdownMenu {
-	display: block;
-}
-
-.dropdownMenu a {
-	padding: 12px;
-	text-decoration: none;
-	display: block;
-}
-
 .ul {
 	list-style: none;
 }
@@ -142,7 +94,6 @@
 
 .nav a {
 	margin: 0 1rem;
-
 	text-decoration: none;
 }
 
@@ -161,6 +112,7 @@
 .nav {
 	display: flex;
 	align-items: center;
+	gap: 30px;
 }
 
 .navBtn {
@@ -189,7 +141,6 @@
 		justify-content: center;
 		gap: 1.5rem;
 		background-color: rgba(20, 6, 27, 1);
-
 		transition: all 1s ease-in-out;
 	}
 
@@ -206,12 +157,17 @@
 	.nav a {
 		font-size: 1.5rem;
 	}
+	.enddiv {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+		padding-top: 100px;
+	}
 }
 
 .rnHeader {
 	color: white;
 	width: 100%;
-
 	top: 0;
 	transition: all 0.3s ease;
 	z-index: 1000;
@@ -238,13 +194,7 @@
 	border: none;
 	font-size: 24px;
 	color: white;
-
 	display: none;
-}
-
-.dropdownItem a {
-	display: flex;
-	align-items: center;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -258,14 +208,6 @@
 		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 	}
 
-	.dropdownMenu {
-		position: absolute;
-		color: black;
-		max-height: 0;
-		overflow: hidden;
-		transition: max-height 0.3s ease-out;
-		width: 100%;
-	}
 	.rnLogoContainer {
 		margin-bottom: 10px;
 	}
@@ -278,9 +220,6 @@
 		gap: 3px;
 	}
 
-	.toolbar .searchInput {
-		width: 180px;
-	}
 	.nav {
 		display: none;
 	}
@@ -291,9 +230,7 @@
 		border: none;
 		font-size: 24px;
 		color: white;
-
 		z-index: 101;
-
 		display: block;
 	}
 	.rnLogoContainer {
@@ -321,18 +258,6 @@
 		display: block;
 	}
 
-	.dropdownItem {
-		position: relative;
-	}
-
-	.dropdownItem:hover .dropdownMenu,
-	.dropdownItem:focus-within .dropdownMenu {
-		max-height: 500px;
-	}
-	.toolbar {
-		width: 200px;
-		margin-top: 100px;
-	}
 	.button {
 		width: 200px;
 	}
