@@ -7,10 +7,12 @@ const Home = () => {
 	return (
 		<div className={styles.home}>
 			<div className={styles.main}>
-				<button className={styles.discordbtn}>
-					<Image src="/image/discord.svg" alt="Discord" width={25} height={25} />
-					<Link href="https://discord.gg/AHmZmtNy">JOIN US DISCORD</Link>
-				</button>
+				<Link href="https://discord.gg/AHmZmtNy">
+					<button className={styles.discordbtn}>
+						<Image src="/image/discord.svg" alt="Discord" width={25} height={25} />
+						JOIN US DISCORD
+					</button>
+				</Link>
 				<button className={styles.roadbtn}>ROAD MAP</button>
 				<h1>
 					REAL GAINS FROM <br /> VIRTUAL VALUE
