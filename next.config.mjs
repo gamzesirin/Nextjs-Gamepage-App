@@ -1,4 +1,6 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+	output: 'export' // build almak için gerekli
+}
 
-export default nextConfig;
+export default nextConfig
