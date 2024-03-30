@@ -1,0 +1,23 @@
+.imagediv {
+	height: auto;
+	width: 100%;
+}
+
+.bgimage {
+	width: 100%;
+	height: auto;
+}
+@media (max-width: 768px) {
+	.bgimage {
+		width: 100%;
+		height: auto;
+	}
+}
+
+/* 1024 ve 1144 arası */
+@media (min-width: 1024px) and (max-width: 1144px) {
+	.imagediv,
+	.bgimage {
+		width: 100%;
+	}
+}

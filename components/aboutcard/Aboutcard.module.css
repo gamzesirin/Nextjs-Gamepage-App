@@ -1,0 +1,98 @@
+.card {
+	display: flex;
+	flex-direction: row;
+	gap: 300px;
+}
+.card1 {
+	padding: 20px;
+	margin: 20px;
+	width: 560px;
+	height: 450px;
+	border-width: 3px;
+	border-style: solid;
+	border-image: linear-gradient(to bottom, rgba(0, 194, 255, 0.79), rgba(255, 255, 255, 0.04)) 1 stretch;
+}
+
+.card2 {
+	padding: 20px;
+	margin: 20px;
+	width: 560px;
+	height: 450px;
+	border-width: 3px;
+	border-style: solid;
+	border-image: linear-gradient(to bottom, rgba(216, 64, 152, 1), rgba(255, 255, 255, 0.04)) 1 stretch;
+}
+
+.card h1 {
+	font-size: 40px;
+	font-weight: 900;
+	line-height: 48.41px;
+	padding-bottom: 10px;
+}
+.card p {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24.41px;
+}
+.title1 {
+	background: -webkit-linear-gradient(to right, rgba(173, 19, 245, 1), rgba(0, 194, 255, 0.79));
+	background: linear-gradient(to right, rgba(173, 19, 245, 1), rgba(0, 194, 255, 0.79));
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	display: inline-block;
+}
+.title2 {
+	background: -webkit-linear-gradient(to right, rgba(250, 125, 12, 1), rgba(0, 194, 255, 0.79));
+	background: linear-gradient(to right, rgba(250, 125, 12, 1), rgba(0, 194, 255, 0.79));
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	display: inline-block;
+}
+@media (max-width: 768px) {
+	.card {
+		flex-direction: column;
+		gap: 30px;
+	}
+	.card1,
+	.card2 {
+		margin: 20px;
+		width: fit-content;
+	}
+	.card h1 {
+		font-size: 25px;
+		font-weight: 900;
+		line-height: 48.41px;
+		padding-bottom: 10px;
+	}
+	.card p {
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 24.41px;
+	}
+}
+/* 1024 ve 1144 arası */
+@media (min-width: 1024px) and (max-width: 1144px) {
+	.card {
+		flex-direction: row;
+		gap: 10px;
+		padding-left: 30px;
+	}
+	.card1,
+	.card2 {
+		margin: 20px;
+		width: 460px;
+	}
+	.card h1 {
+		font-size: 30px;
+		font-weight: 900;
+		line-height: 48.41px;
+		padding-bottom: 10px;
+	}
+	.card p {
+		font-size: 15px;
+		font-weight: 400;
+		line-height: 24.41px;
+	}
+}
