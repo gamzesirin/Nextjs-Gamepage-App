@@ -10,9 +10,9 @@ const Section = () => {
 				<h1>
 					Step into our universe and start <br /> winning immediately
 				</h1>
-				<button className={styles.btn}>
-					<Link href="/games">PLAY NOW</Link>
-				</button>
+				<Link href="/games">
+					<button className={styles.btn}>PLAY NOW</button>
+				</Link>
 				<p className={styles.paragraf}>
 					We will provide you with a test code <br /> for our game currently in the beta <br /> stage and strive to{' '}
 					<br /> grant you access to the content as much as possible. <br /> Please report any errors and provide <br />{' '}
